@@ -8,12 +8,21 @@ state ={
   render() {
     return (
       <div className="App">
-       <form> 
-         <input type="text" placeholder="Enter City..."></input>
-         <button>Submit</button>
+       <form onSubmit={this.handleSubmit}> 
+         <input type="text" placeholder="Search City..." onChange={this.handleChange} ></input>
+         <button >Enter</button>
        </form>
       </div>
     )
+  }
+  handleChange=(event)=>{
+    const value = event.target.value
+    this.setState({city: value})
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    this.props.onSubmitForm(this.state.city)
   }
 }
 
