@@ -10,7 +10,6 @@ state ={
       <div className="search-box">
        <form onSubmit={this.handleSubmit}> 
          <input type="text" className="search-bar" placeholder="Search City..." onChange={this.handleChange} ></input>
-         <button >Enter</button>
        </form>
       </div>
     )

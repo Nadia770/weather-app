@@ -12,7 +12,7 @@ body {
 .app {
   text-align: center;
   font-family: "montseratt", sans-serif;
-  background-image: url("./Images/cloudy.jpg");
+  background-image: url("./Images/cold-umberella.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -20,7 +20,7 @@ body {
 .app-warm {
   text-align: center;
   font-family: "montseratt", sans-serif;
-  background-image: url("./Images/day.png");
+  background-image: url("./Images/summer.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -42,8 +42,9 @@ main {
 
 .search-box .search-bar {
   display: block;
-  width: 100%;
+  width: 50%; 
   padding: 15px;
+  margin-left: 25%;
 
   appearance: none;
   background: none;
@@ -52,7 +53,7 @@ main {
 
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0px 0px 16px 16px;
-  margin-top: -25px;
+  margin-top: 30x;
 
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
 
@@ -66,13 +67,6 @@ main {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-.location-box .location {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 500;
-  text-align: center;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
-}
 
 .location-box .date {
   color: #fff;
@@ -85,6 +79,25 @@ main {
 
 .weather-box {
   text-align: center;
+}
+
+
+.location-box .location {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+
+
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .weather-box .temp {
@@ -107,7 +120,17 @@ main {
 
 .weather-box .weather {
   color: #fff;
-  font-size: 48px;
+  font-size: 35px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
+
+.min-max-temp {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+  padding: 15px;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
