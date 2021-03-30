@@ -134,3 +134,13 @@ main {
   text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
 }
 
+.container-error{
+  background-color: rgba(50, 50, 70, 0.5);
+  min-height: 100vh;
+}
+.error{
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(114, 17, 17);
+}
