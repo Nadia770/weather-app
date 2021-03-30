@@ -7,9 +7,9 @@ state ={
 
   render() {
     return (
-      <div className="App">
+      <div className="search-box">
        <form onSubmit={this.handleSubmit}> 
-         <input type="text" placeholder="Search City..." onChange={this.handleChange} ></input>
+         <input type="text" className="search-bar" placeholder="Search City..." onChange={this.handleChange} ></input>
          <button >Enter</button>
        </form>
       </div>

@@ -35,9 +35,11 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="app">
+        <main>
         <Form onSubmitForm={this.submitForm} />
         <Weather data={this.state.weatherData} />
+        </main>
       </div>
     );
   }
